@@ -1,4 +1,5 @@
 import org.junit.Test;
+import org.mockito.Mockito;
 
 import static org.mockito.Mockito.*;
 
@@ -13,7 +14,7 @@ public class test {
 
     @Test
     public void mock_test(){
-        Test_Program ravy = mock(Test_Program.class);
+        Test_Program ravy = Mockito.mock(Test_Program.class);
         when(ravy.return_five()).thenReturn(6);
         assert(ravy.return_five() == 6);
     }
