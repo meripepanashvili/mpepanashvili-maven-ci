@@ -5,6 +5,7 @@ public class Test_Program {
 
     public static void main(String[] args){
         int a = 15;
+        System.out.print(5);
     }
 
     public int return_five(){
